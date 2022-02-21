@@ -1,0 +1,163 @@
+.bank-account-container{
+	width: 97%;
+	border: 2px solid;
+	border-radius: 10px;
+	border-color: #f28d1f;
+	margin-bottom: 40px;
+	margin-left: 1.5%;
+}
+
+.account{
+	width: 98%;
+	margin-left: 1%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	border: 2px solid;
+	border-radius: 10px;
+	border-color: #f28d1f;
+}
+
+.account .header{
+	width: 95%;
+	margin-left: 2.5%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.account .header h4{
+	margin-left: 20px;
+	margin-bottom: 10px;
+	font-size: 19px;
+}
+
+.account .body{
+	width: 95%;
+	margin-left: 2.5%;
+	margin-bottom: 20px;
+}
+
+.account .footer{
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.account .footer button{
+	margin-right: 20px;
+	padding: 5px;
+	border-radius: 10px;
+	border:none;
+	outline: none;
+	background-color: green;
+	color: white;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+	transition: 0.5s ease-in-out;
+}
+
+.create-account {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.create-account button{
+	padding: 5px;
+	border-radius: 10px;
+	border:none;
+	outline: none;
+	background-color: green;
+	color: white;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+	transition: 0.5s ease-in-out;
+}
+
+.create-account button:hover,
+.account .footer button:hover{
+  box-shadow:  0px 0px 20px rgba(0, 95, 40, 0.8);
+	padding: 7px;
+}
+
+.logo-modal{
+	width: 80%;
+	margin-left: 10%;
+}
+
+@media only screen and (max-width:1200px){
+	.btn-menu-user{
+		width: 45px;	
+		transform: translateX(-110px);
+		margin-top: 30px;
+		overflow-x: hidden;
+	}
+
+	.btn-menu-user .line1,
+	.btn-menu-user .line2,
+	.btn-menu-user .line3{
+		background-color: white;
+		width: 35px;
+		height: 3px;
+		margin-bottom: 5px;
+		border-radius: 15px;
+	}
+
+	.header-user-navigation .expand{
+		height: 500px;
+	}
+
+
+	.activate_user .line1{
+		transform: rotate(50deg);
+		margin-top: 15px;
+	}
+
+	.activate_user .line2{
+		transform: translateX(1000px);
+	}
+
+	.activate_user .line3{
+		transform: rotate(-50deg);
+		margin-top: -15px;
+	}
+
+	.user-navigation-menu{
+		flex-direction: column;
+		margin-left: 10%;
+		background-color: #024b28;
+		margin-top: 81px;
+		position: absolute;
+		height: 0px;	
+		overflow-y: hidden;
+		width: 80%;
+		padding: 0px;
+		border-radius: 10px;
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+	}
+
+	.user-navigation-menu li{
+		margin-top: 90px;
+		width: 100%;
+		text-align: center;
+	}
+
+
+	.header-user-navigation .btn-signout{
+		margin-left: 50%;
+		height: 65px;
+		margin-top: 5px;
+	}
+}
+
+@media only screen and (max-width:675px){
+	.header-user-navigation .btn-signout{
+		margin-left: 40%;
+	}
+
+	.btn-see{
+		margin-top: 30px;
+	}
+
+	.header-user-navigation h4{
+		display: none;
+	}
+
+}
